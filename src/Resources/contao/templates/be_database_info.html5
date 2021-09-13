@@ -1,19 +1,21 @@
 <div id="tl_maintenance_cache" class="maintenance_<?php echo $this->isActive ? 'active' : 'inactive'; ?>">
 
-	<h2 class="sub_headline"><?php echo $this->headline; ?></h2>
+<h2 class="sub_headline"><?php echo $this->headline; ?></h2>
+
+<div class="tl_tbox">
 
 	<div class="tl_formbody_edit">
-        <fieldset class="tl_checkbox_container">
-          <table width="100%">
-          <thead>
-            <tr>
-              <th>Inhaltselement</th>
-              <th>Anzahl</th>
-              <th>Bereich</th>
-              <th>Kern-Element</th>
-            </tr>
-          </thead>
-          <tbody>
+		<fieldset class="tl_checkbox_container">
+			<table width="100%">
+				<thead>
+					<tr>
+						<th>Inhaltselement</th>
+						<th>Anzahl</th>
+						<th>Bereich</th>
+						<th>Kern-Element</th>
+					</tr>
+				</thead>
+				<tbody>
 		<?php foreach($this->arrElementsCount as $key => $value) : ?>
 		<tr>
 			<td class="nw"><label for="purge_index"><?php echo $key; ?></label></td>
@@ -22,9 +24,10 @@
 			<td><?php echo ($this->arrElementsCore[$key]) ? 'Ja' : 'Nein'; ?></td>
 		</tr>
 		<?php endforeach; ?>
-            </tbody>
-          </table>
-        </fieldset>
+				</tbody>
+			</table>
+		</fieldset>
 	</div>
-	
+</div>
+
 </div>

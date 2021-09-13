@@ -1,4 +1,5 @@
 <?php
+namespace Schachbulle\ContaoDatabaseinfoBundle\Classes;
 
 class DatabaseInfo extends \Backend implements \executable
 {
